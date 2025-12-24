@@ -1,0 +1,11 @@
+arr=list(map(int,input().split()))
+n=int(input())
+m=int(input())
+q=m
+m-=q
+arr=sorted(arr)
+kq=0
+while(m+q<=n):
+    m+=q
+    kq+=arr[m]
+print(kq)
