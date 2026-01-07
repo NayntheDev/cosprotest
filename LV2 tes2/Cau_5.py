@@ -1,0 +1,11 @@
+def solution(calorie):
+    min_cal = max(calorie)
+    answer = 0
+    for cal in calorie:
+        if cal > min_cal:
+            answer += cal - min_cal
+        min_cal = min(min_cal, cal)
+    return answer
+calorie = [713, 665, 873, 500, 751]
+ret = solution(calorie)
+print(ret)
